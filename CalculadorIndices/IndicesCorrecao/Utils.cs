@@ -23,7 +23,7 @@ namespace CalculadorIndices.IndicesCorrecao
         /// </summary>
         /// <param name="indices">Lista de índices que devem ser calculados</param>
         /// <returns>O acumulado da lista de indices</returns>
-        public static decimal CalcularJurosCompostos(IEnumerable<decimal> indices) => indices.Aggregate((indiceAcumulado, indice) => indiceAcumulado * indice);
+        public static decimal CalcularJurosCompostos(IEnumerable<decimal> indices) => indices.Aggregate(1M, (indiceAcumulado, indice) => indiceAcumulado * (1 + indice));
 
         /// <summary>
         /// Efetua o cálculo de juros simples
