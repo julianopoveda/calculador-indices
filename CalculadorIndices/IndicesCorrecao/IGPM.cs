@@ -17,12 +17,12 @@ namespace CalculadorIndices.IndicesCorrecao
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ValorCorrigido> CorrigirEDiscriminar(decimal valorInicial, IEnumerable<Indice> indices)
+        public IEnumerable<ValorCorrigidoPorCompetencia> CorrigirEDiscriminar(decimal valorInicial, IEnumerable<Indice> indices)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ValorCorrigido> CorrigirEDiscriminar(decimal valorInicial, IEnumerable<Indice> indices, DateTime dataInicial)
+        public IEnumerable<ValorCorrigidoPorCompetencia> CorrigirEDiscriminar(decimal valorInicial, IEnumerable<Indice> indices, DateTime dataInicial)
         {
             throw new NotImplementedException();
         }
